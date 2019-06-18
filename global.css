@@ -1,6 +1,11 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: roboto;
   margin:0 auto;
+  font-family: sans-serif;
 }
 
 p, ol, ul{
