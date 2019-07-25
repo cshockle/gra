@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>gra598 final</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3c6c978dae.js"></script>
+
+  </head>
+  <body>
+    <div class="navbar">
+        <nav id="left-nav" class="nav-groups">
+          <div id="logo" class="navbar-links">
+            Charles Shockley
+          </div><!--closed navbar links logo-->
+          <div class="navbar-links"><a href="#">Home</a></div>
+          <div class="navbar-links"><a href="#">About</a></div>
+          <div class="navbar-links"><a href="#">Projects</a></div>
+          <div class="navbar-links"><a href="#">Contact</a></div>
+        </nav>
+        <nav id="right-nav" class="nav-groups">
+          <div class="navbar-links"><a href="#">Contact</a></div>
+          <div id="hamburger-icon" class="navbar-links">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div id="toggle-menu">
+            <input type="checkbox" />
+              <ul id="side-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+        </nav>
+    </div> <!--closed navbar-->
+    <div id="wrapper">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img class="slider-images" src="img/test-image.jpg">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img class="slider-images" src="img/test-image-2.jpg">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img class="slider-images" src="img/test-image-3.png">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+  </body>
+</html>
