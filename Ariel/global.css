@@ -1,0 +1,13 @@
+body{
+  font-family: sans-serif;
+}
+
+#navigation-container{
+  background-color: blue;
+  height: 75px;
+  padding: 20px;
+}
+
+.menu-children{
+  color: white;
+}
