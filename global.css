@@ -3,9 +3,8 @@ html{
 }
 
 body{
-  font-family: roboto;
+  font-family: 'Cutive Mono', monospace;
   margin:0 auto;
-  font-family: sans-serif;
 }
 
 p, ol, ul{
@@ -77,7 +76,8 @@ a{
 
 #hello-world-banner{
   height: 500px;
-  background-color: #2c3037;
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/tic-tac-toe.png);
+  background-repeat: repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
