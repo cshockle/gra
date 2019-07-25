@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="your-class">
+          <div class="slider-images"><img src="../../gra598/img/test-image-green.png" alt=""></div>
+          <div class="slider-images"><img src="../../gra598/img/test-image-orange.png" alt=""></div>
+          <div class="slider-images"><img src="../../gra598/img/test-image-pink.png" alt=""></div>
+          <div class="slider-images"><img src="../../gra598/img/test-image-yellow.png" alt=""></div>
+          <div class="slider-images"><img src="../../gra598/img/test-image-purple.png" alt=""></div>
+          <div class="slider-images"><img src="../../gra598/img/test-image-800.png" alt=""></div>
+        </div>
+    </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+
+      <script type="text/javascript">
+         $(document).ready(function(){
+           $('.your-class').slick({
+             dots: true,
+             arrows: true,
+             autoplay: false,
+             autoplaySpeed: 2000,
+             infinite: true,
+             slidesToShow: 2,
+             slidesToScroll: 2
+           });
+         });
+       </script>
+  </body>
+</html>
