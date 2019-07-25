@@ -1,0 +1,11 @@
+.navbar{
+  display: flex;
+}
+
+.navbar-link{
+  padding-right: 20px;
+}
+
+.logo-home{
+  padding-right: 20px;
+}
