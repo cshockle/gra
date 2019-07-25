@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/3c6c978dae.js"></script>
+    <style>
+      body{
+        margin: 0px;
+      }
+
+      .fa-bars{
+        font-size: 30px;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-top: 20px;
+        position: absolute;
+        z-index: 100;
+      }
+
+      #wrapper{
+        background-color: red;
+        height: 1000px;
+        width: 100%;
+        background-height: auto;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-height: 800px;
+      }
+
+      .side-menu{
+        height: 100%;
+        width: 400px;
+        background-color: black;
+        position: relative;
+        left: -400px;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+      }
+
+      .side-menu-open{
+        left: 0px;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <a class="link" href="#" class="hamburger-button"><i class="fas fa-bars"></i></a>
+
+      <div class="side-menu"></div>
+    </div>
+    <script>
+      $( document ).ready(function() {
+        $( ".link" ).click(function() {
+          $( ".side-menu" ).toggleClass("side-menu-open")
+        });
+      });
+    </script>
+  </body>
+</html>
